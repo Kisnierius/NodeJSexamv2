@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">  <script src="bills.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Bills</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="button button-outline" href="register.html">Register</a>
+      <a class="button" href="login.html">Login</a>
+      <a class="button button-outline" href="groups.html">Groups</a>
+    </nav>
+  </header>
+  <main>
+    
+    <div>
+      <h2>Bills:</h2>
+    </div>
+    <div id="bills">
+      <table id="bills-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <div>
+        <form id="add-bill">
+          <h2>Add Bill</h2>
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" name="amount" min="0">
+          <label for="description">Description</label>
+          <input type="text" id="description">
+          <button type="submit">Add</button>
+          <h3 id="message"></h3>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
